@@ -12,3 +12,4 @@ while True:
 
     print(" "*(a/2) + "*")
     print(" "*((a/2) -1) +"***")
+    print("")
