@@ -11,7 +11,7 @@ def getName n
 	n = b.size
 	puts b
 	return (b[n-1].split ".")[0]
-	
+
 end
 
 a = Dir.glob("Source/*")
@@ -23,7 +23,7 @@ for i in a
 		url = "http://www.urionlinejudge.com.br/repository/UOJ_#{problem}.html"
 		puts url
 		source = open(URI.parse(url), {ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE}).read
-		yourfile = "HTML\\"+problem+".html"
+		yourfile = "HTML\/"+problem+".html"
 		File.open(yourfile, 'w') { |file| file.write(source) }
 	rescue
 		puts "Erro..."
